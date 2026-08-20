@@ -30,7 +30,7 @@ A sleek, responsive, and witty e-commerce landing page concept built from scratc
 
 1. Clone the repository:
 ```Bash
-   git clone [https://github.com/SH-AHD/meowshop-landing-page](https://github.com/SH-AHD/meowshop-landing-page)
+   git clone https://github.com/SH-AHD/meowshop-landing-page
 ```
 2. Navigate to the project directory:
 ```Bash
@@ -39,4 +39,4 @@ A sleek, responsive, and witty e-commerce landing page concept built from scratc
 3. Open `index.html` in your favorite web browser (or use VS Code Live Server).
 
 ### 👩‍💻 Author
-**[Shahd Sameh](@SH-AHD)**   
+**[Shahd Sameh](https://github.com/SH-AHD)**   
