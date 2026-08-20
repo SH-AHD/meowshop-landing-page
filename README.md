@@ -39,4 +39,4 @@ A sleek, responsive, and witty e-commerce landing page concept built from scratc
 3. Open `index.html` in your favorite web browser (or use VS Code Live Server).
 
 ### 👩‍💻 Author
-    **Shahd Sameh**   
+**Shahd Sameh**   
