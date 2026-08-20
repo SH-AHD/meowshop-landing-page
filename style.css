@@ -1,0 +1,376 @@
+/* reset styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --font-primary: rgb(72, 21, 119);
+    --font-secondary: rgb(158, 45, 158);
+    --card-color: rgb(120, 95, 145);
+    --bg-color: rgb(215, 189, 240);
+    --text-muted: #4a3b5c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:poppins, sans-serif;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+
+
+/* Utility Classes start */
+
+/* Buttons styling */
+
+/* General button styling  */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 12px;
+    padding: 12px 24px;
+    border: 2px solid blueviolet;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+    transform: translateY(-2px);
+    background-color: blueviolet;
+}
+
+/* main btn */
+.btn-primary {
+    background-color: var(--font-primary);
+    color: white;
+    border-color: var(--font-primary);
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: var(--font-primary);
+    font-weight: 600;
+}
+
+/* contact btn */
+
+#contact form .btn {
+    width: 100%;
+    color: var(--font-primary);
+    border-color: var(--font-primary);
+}
+
+#contact form .btn:hover {
+    color: white;
+    background-color: var(--font-primary);
+}
+
+/* Titles styling */
+.title {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 38px;
+    color: var(--font-primary);
+}
+
+/* Utility Classes End */
+
+/* Header Styling start */
+header {
+    min-height: 100vh;
+    background: url("./imgs/MeowModel.jpg") center center/cover no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    inset: 0;
+    z-index: 1;
+}
+
+header * {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+
+/* Container for Logo + Text */
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+
+}
+
+.brand-logo img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.brand-logo .shop-name {
+    font-family: 'Pacifico', cursive;
+   font-size: 26px;
+    font-weight: normal;
+    color: #ffffff;
+    letter-spacing: 1px;text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    transition: color 0.3s ease;
+}
+
+.brand-logo:hover .shop-name {
+    color: #e4c1f9;
+}
+
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+
+.navbar ul li a:hover {
+    color: var(--bg-color);
+}
+
+header .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header .content h1 {
+       font-size: clamp(32px, 5vw, 56px);
+    margin-bottom: 15px;
+}
+
+header .content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Header Styling End */
+
+
+
+/* About Section Start */
+#about {
+    padding: 60px 20px;
+     max-width: 900px;
+    margin: 0 auto;
+}
+
+#about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30;
+
+}
+
+#about .container img {
+    margin: 50px;
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    border: 1px solid var(--font-primary-color);
+    box-shadow: blueviolet 4px 3px 20px;
+
+}
+
+#about .container .about-contnet p {
+    line-height: 1.7;
+    color: var(--text-muted);
+    /* padding: 20px;
+    margin: 20px; */
+}
+
+/* About Section End */
+
+/* Menu Section Start */
+#menu {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#menu .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Item Card Styling */
+#menu .item {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 15px;
+    margin: 20px 70px;
+       background: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    border: 1px solid rgba(72, 21, 119, 0.2);
+    cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#menu .item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(72, 21, 119, 0.15);
+}
+
+#menu .container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+#menu .item h4 {
+    color: var(--font-primary);
+    margin-bottom: 5px;
+}
+
+#menu .item p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+
+#menu .container .item .pr {
+    font-weight: bold;
+    color: var(--font-secondary);
+
+
+}
+
+#menu .container .item .pr del {
+     color: var(--card-color);
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+#menu .item div {
+    padding-left: 10px;
+    padding-right: 30px;
+    line-height: 1.6;
+}
+
+/* #menu a{
+    margin: auto;
+   
+} */
+/* Menu Section End */
+
+
+/* Contact Section Start */
+
+#contact {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+#contact .contact-info, #contact form {
+    flex: 1 1 350px;
+}
+
+
+#contact .contact-info h3 {
+    font-size: 28px;
+    color: var(--font-primary);
+    margin-bottom: 15px;
+
+}
+
+#contact .contact-info p {
+    color: var(--text-muted);
+    margin-bottom: 10px;
+letter-spacing: 1.8px;
+}
+
+#contact form {
+    width: 45%;
+}
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--font-primary);
+    border-radius: 8px;
+    /* background-color: transparent; */
+    background: rgba(255, 255, 255, 0.6);
+    font-family: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+#contact form input:focus,
+#contact form textarea:focus {
+    outline: none;
+    border-color: blueviolet;
+    box-shadow: 0 0 8px rgba(138, 43, 226, 0.3);
+}
+
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Contact Section End */
+
+/* Footer Start */
+#footer {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+    font-size: 14px;
+    color: var(--font-primary);
+    text-align: center;
+    margin-top: 40px;
+}
+/* Footer End */
